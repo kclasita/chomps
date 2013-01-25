@@ -10,7 +10,7 @@ gem 'haml-rails'
 gem 'high_voltage', ">= 1.2.0"
 gem 'rdiscount'
 gem 'airbrake'
-gem 'activerecord-postgresql-adapter'
+gem 'pg'
 
 group :development do
   gem 'foreman'

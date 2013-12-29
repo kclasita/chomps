@@ -10,7 +10,7 @@ gem 'haml-rails'
 gem 'high_voltage'
 gem 'rdiscount'
 gem 'pg'
-gem 'bootstrap-sass'
+gem 'foundation'
 
 group :assets do
   gem 'sass-rails'

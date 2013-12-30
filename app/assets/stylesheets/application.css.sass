@@ -7,8 +7,10 @@ body
   background-color: #3da1e0
 .section--grey
   background-color: #333
+.section--white
+  background-color: #fff
 .section--picture
-  background-image: image-url('about__background.jpg')
+  background: image-url('about__background.jpg')
   background-size: cover
   background-repeat: no-repeat
   background-position: top center
@@ -16,28 +18,48 @@ body
   padding: 2em 0
 
 // Teeth Section//
+
+.container--header
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  height: 430px
+  margin: 0 auto
+  z-index: -9999
+
+.container--fill
+  float: left
+  width: 100%
+  margin: 430px auto 0
+  display: block
+  // padding-top: 100px
 .mouth--teeth-top
-  background: #333
-  background-image: image-url('/images/assemble-06.svg')
-  height: 100%
+  background: image-url('tooth--top.svg')
+  background-color: #333
+  height: 92px
   background-repeat: repeat-x
 .mouth
   background-color: #333
-  padding: 10em
+  padding: 8em 0 15em
 .mouth--teeth-bottom
-  background-color: #3da1e0
-  height: 40px
-
+  background: image-url('tooth--bottom.svg')
+  height: 92px
+  background-repeat: repeat-x
+  border-bottom: 1px solid #3da1e0
+  background-position: left -127px top
+.mouth__container--teeth-bottom
+  background: rgba(54, 25, 25, 0)
 // Type //
 
 .title
-  font-size: 2em
+  font-size: 3.25em
   color: #fff
   text-align: center
   margin: 0
-  padding: 1em 0
 .title--emphasize
   color: #3da1e0
+  font-weight: bold
 p.lead
   color: #fff
   text-align: center

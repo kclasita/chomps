@@ -11,6 +11,7 @@ gem 'high_voltage'
 gem 'rdiscount'
 gem 'pg'
 gem 'foundation-rails'
+gem 'compass'
 
 group :assets do
   gem 'sass-rails'

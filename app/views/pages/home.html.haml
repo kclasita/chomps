@@ -10,12 +10,15 @@
 
   %section.section--blue.soft--ends 
     .row
-      .large-12.columns.logo--main
-        =image_tag "logo.svg"
+      .large-4.columns.large-centered
+        .logo--main
+          =image_tag "logo.svg", :class => "icon"
     .row
-      .large-5.columns.large-centered
+      .large-6.columns.large-centered
         %p.lead Chomps are a movable toy made from folded paper and a little glue. 
-        %button Download Template
+    .row
+      .large-3.columns.large-centered
+        %button.button--white Download Your Chomp
   %section.section--white.soft--ends
     .row
       .large-12.columns
@@ -94,11 +97,11 @@
         %p.lead They’re silly but suprisingly fun.
     .row
       .large-4.columns
-        %button Kristin’s Website
+        %button.button--white Kristin’s Website
       .large-4.columns
-        %button Chomps on Github
+        %button.button--white Chomps on Github
       .large-4.columns
-        %button Say Hi to Kristin
+        %button.button--white Say Hi to Kristin
     .row
       .large-4.columns.large-centered
         %p © Kristin Lasita 2014

@@ -20,5 +20,8 @@ group :assets do
   gem 'uglifier'
 end
 
+group :development, :test do
+  gem 'debugger'
+end
+
 gem 'jquery-rails'
-gem 'debugger'

@@ -12,11 +12,11 @@ gem 'high_voltage'
 gem 'rdiscount'
 gem 'pg'
 gem 'foundation-rails'
+gem 'rails_12factor'
 
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-
   gem 'uglifier'
 end
 

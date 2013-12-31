@@ -6,11 +6,10 @@
 <g id="Background">
 </g>
 <g id="Style_Elements">
-	<circle fill="#255E7A" cx="51.341" cy="48.713" r="48.341"/>
 	<g>
-		<path fill="#FFFFFF" d="M55.775,28.743H28.343v48.812h38.561l0-38.212L55.775,28.743z M56.654,33.625l5.125,4.881h-5.125V33.625z
-			 M31.272,74.626V31.672h22.454v9.762h10.25l0,33.192H31.272z"/>
-		<rect x="38" y="19" fill="#FFFFFF" width="39" height="49"/>
+		<path fill="#FFFFFF" d="M53.422,34.648h-22.22v39.537h31.235l0-30.952L53.422,34.648z M54.134,38.602l4.151,3.953h-4.151V38.602z
+			 M33.575,71.813V37.02h18.188v7.907h8.303l0,26.885H33.575z"/>
+		<rect x="38" y="27" fill="#FFFFFF" width="33" height="39"/>
 	</g>
 </g>
 <g id="Grid" display="none">

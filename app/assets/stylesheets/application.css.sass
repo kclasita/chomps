@@ -38,13 +38,11 @@ a
   height: 430px
   margin: 0 auto
   z-index: -9999
-
 .container--fill
   float: left
   width: 100%
   margin: 430px auto 0
   display: block
-  // padding-top: 100px
 .mouth--teeth-top
   background: image-url('tooth--top.svg')
   background-color: #333
@@ -123,6 +121,7 @@ p.lead
   text-align: center
   color: #bbb
   padding: 2em 0
+
 // Button //
 .button--white
   color: #666
@@ -143,3 +142,25 @@ p.lead
   margin-bottom: 5px
   &:hover
     background-color: #fff
+
+@media only screen and (max-width: 767px)
+  .soft--ends
+    padding: 2em 0
+  .container--fill
+    margin: 194px auto 0
+  .mouth--teeth-top
+    background-size: 70px 30px
+    height: 72px
+  .mouth
+    padding: 0 0 5em
+  .mouth--teeth-bottom
+    background-size: 70px 30px
+    height: 28px
+    background-position: left -105px top
+  h2
+    font-size: 1.25em
+    color: #3da1e0
+    font-weight: bold
+    text-align: center
+  .title
+    font-size: 2.25em

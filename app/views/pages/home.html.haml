@@ -1,3 +1,5 @@
+//APOLOGIES FOR THE MESS //
+
 %section.container--header
   .mouth--teeth-top
   .mouth
@@ -30,75 +32,83 @@
               %g#Left_Eye
                 %path{:d => "M49.4,33.7c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4\n\t\tC47.8,30.3,49.4,31.8,49.4,33.7z", :fill => "#1563AB"}/
     .row
-      .large-6.columns.medium-6.large-centered.medium-centered
+      .large-8.columns.medium-8.large-centered.medium-centered
         %p.lead Chomps are a movable toy made from folded paper and a little glue.
     .row
-      .large-3.columns.medium-3.large-centered.medium-centered
-        %a.button--white{href: "/Chomp--Black.pdf"} Download Your Chomp
+      .large-4.columns.medium-5.large-centered.medium-centered
+        %a.button{href: "/Chomp--Black.pdf"} Download Your Free Chomp
+    =image_tag "example--chomp.jpg", :class => "image--sample"
+
   %section.section--white.soft--ends
     .row
-      .large-12.columns
-        %h2 Meet the Chomps
-    .row
-      .large-12.columns
-        =image_tag "example--chomp.jpg"
-  %section.soft--ends.section--grey
-    .row
-      .large-12.columns
-        %h2.type--white Supplies you'll need:
-    .row
-      .large-3.columns.medium-3
-        .icon__container
-          =image_tag "assemble--paper.svg", :class => "icon"
-        %h3.type--white.subtitle.center 2 Sheets Cardstock
-      .large-3.columns.medium-3
-        .icon__container
-          =image_tag "assemble--cut.svg", :class => "icon"
-        %h3.type--white.subtitle.center Exacto Blade
-      .large-3.columns.medium-3
-        .icon__container
-          =image_tag "assemble--fold.svg", :class => "icon"
-        %h3.type--white.subtitle.center Scoring Tool
-      .large-3.columns.medium-3
-        .icon__container
-          =image_tag "assemble--glue.svg", :class => "icon"
-        %h3.type--white.subtitle.center Rubber Cement
-  %section.section--white.soft--ends-half
+      .large-4.columns.large-offset-2
+        =image_tag "supplies.gif"
+      .large-4.columns.end
+        %h2 Supplies
+        %ul
+          %li Two Pieces of Paper
+          %li Scissors or Exacto
+          %li Pen Cap
+          %li Rubber Cement
+        %a.button--small{href: "/Chomp--Black.pdf"} Download Chomp Pattern
+
+    %hr
+
     .row
       .large-4.columns
-        %h2 Step 1: Download
+        %h2 Step 1
+    .row
+      .large-4.columns
         %h4 Download the PDF
         %p This contains an overview page, the top of the Chomp, and the bottom of the Chomp. <a href="/Chomp--Black.pdf">Download it here</a>
+      .large-4.columns
         %h4 Print out pages
         %p Print the top and bottom onto cardstock. The thicker paper helps with the durability of the toy.
-      %hr.hide-for-large
+
+    %hr
+
+    .row
       .large-4.columns
-        %h2 Step 2: Cut
+        %h2 Step 2
+    .row
+      .large-4.columns
         %h4 Cut out the Chomps
         %p Carefully cut around the outside of the Chomp pattern.
-        %h4 Scour all dashed lines
-        %p Gently score along the dashed lines. This helps to create crisper folds. A pencap works great for this. You should now be able to fold these easilly.
-      %hr.hide-for-large
       .large-4.columns
-        %h2 Step 3: Glue
+        %h4 Scour all dashed lines
+        %p Gently score along the dashed lines. This helps to create crisper folds. You should now be able to fold these easily.
+    %hr
+    .row
+      .large-4.columns
+        %h2 Step 3
+    .row
+      .large-4.columns
         %h4 Glue tabs A-F
         %p Put glue on Tab A. Glue side A to Tab A. Hold until bond has formed. Repeat for tabs B, C, D, E, and F.
+      .large-4.columns
+        %h4 Repeat for B-F
+        %p Repeat glue for tabs B, C, D, E, and F. Don’t do G and H yet!
+
+    %hr
+    .row
+      .large-4.columns
+        %h2 Step 4
+    .row
+      .large-4.columns
         %h4 Assemble pieces
         %p Take the finished head and slide it into the unglued side of the bottom. Be sure the colors of the teeth match up.
+      .large-4.columns
         %h4 Glue tabs G and H
         %p Repeat first steps on tabs G and H. This is the trickiest part, as there is little room between the top and the sides.
+
   %section.soft--ends.section--picture
     .row
       .large-12.columns
-        %h3.center.type--white.heading Chomps are a side project of Kristin Lasita.
-        %p.lead They’re silly but suprisingly fun.
-    .row
-      .large-4.medium-4.columns
-        %a.button--white{href: "http://www.kristinlasita.com/"} Kristin’s Website
-      .large-4.medium-4.columns
-        %a.button--white{href: "https://github.com/kclasita/chomps"} Chomps on Github
-      .large-4.medium-4.columns
-        %a.button--white{href: "mailto:kclasita@gmail.com"} Say Hi to Kristin
+        %h3.center.type--white.heading
+          Chomps are a side project of
+          =link_to 'Kristin Lasita.', 'http://kristinlasita.com/'
+        %p.lead Please share your Chomps with me!
+
     .row
       .large-4.columns.large-centered
-        %p.copyright © Kristin Lasita 2014
+        %p.copyright © Kristin Lasita 2015 | I do not own Best-Test Rubber Cement

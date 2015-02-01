@@ -10,7 +10,7 @@ body
   margin: 0
   font-family: 'Open Sans', sans-serif
 .section--blue
-  background-color: #3da1e0
+  background-color: #2790f2
 .section--grey
   background-color: #333
 .section--white
@@ -38,27 +38,80 @@ a
   height: 430px
   margin: 0 auto
   z-index: -9999
+
 .container--fill
   float: left
   width: 100%
   margin: 430px auto 0
   display: block
+
 .mouth--teeth-top
   background: image-url('tooth--top.svg')
-  background-color: #333
+  background-color: #2e3c62
   height: 92px
   background-repeat: repeat-x
+
 .mouth
-  background-color: #333
+  background-color: #2e3c62
   padding: 8em 0 15em
+
 .mouth--teeth-bottom
   background: image-url('tooth--bottom.svg')
   height: 92px
   background-repeat: repeat-x
-  border-bottom: 1px solid #3da1e0
+  border-bottom: 3px solid #2790f2
   background-position: left -127px top
+
 .mouth__container--teeth-bottom
   background: rgba(54, 25, 25, 0)
+
+
+// animation //
+#Left_Eye
+  transform-origin: 10% 50% 0
+  -webkit-transform-origin: 10% 50% 0
+  animation: blink 3s linear infinite
+  -webkit-animation: blink 3s linear infinite
+
+#Right_Eye
+  transform-origin: 5% 40% 0
+  -webkit-transform-origin: 5% 40% 0
+  animation: blink 3s linear infinite
+  -webkit-animation: blink 3s linear infinite
+
+
+@keyframes blink
+  0%
+    transform: scaleY(1)
+
+  46%
+    transform: scaleY(1)
+
+  50%
+    transform: translateY(4px) scaleY(0.1)
+
+  54%
+    transform: scaleY(1)
+
+  100%
+    transform: scaleY(1)
+
+
+@-webkit-keyframes blink
+  0%
+    -webkit-transform: scaleY(1)
+
+  46%
+    -webkit-transform: scaleY(1)
+
+  50%
+    -webkit-transform: translateY(4px) scaleY(0.1)
+
+  54%
+    -webkit-transform: scaleY(1)
+
+  100%
+    -webkit-transform: scaleY(1)
 
 // Images//
 .icon__container
@@ -74,19 +127,15 @@ a
 .icon--logo__container
   height: 80px
   width: 80px
-  background-color: darken(#3da1e0, 20)
+  background-color: #1563ab
   border-radius: 50%
   margin: auto
   margin-bottom: 1em
 .icon--logo
-  background: image-url('logo.svg') no-repeat
   height: 80px
   width: 80px
   display: block
-  background-size: contain
-  &:hover
-    background: image-url('logo--sad.svg') no-repeat
-    background-size: contain
+
 // Type //
 h2
   font-size: 2em
@@ -147,7 +196,7 @@ p.lead
   .soft--ends
     padding: 2em 0
   .container--fill
-    margin: 194px auto 0
+    margin: 175px auto 0
   .mouth--teeth-top
     background-size: 70px 30px
     height: 72px

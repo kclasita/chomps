@@ -55,9 +55,10 @@
 
         %a.button--small{href: "/Chomp--Black.pdf"} Download Chomp Pattern
 
-      .large-6.columns
+      .large-6.columns.hide-for-small
         =image_tag "supplies.gif", :class => "image--supplies"
-    .row
+
+    .row.hide-for-small
       .large-11.columns.large-centered
         %hr
 
@@ -141,10 +142,9 @@
         .center.about-heading
           Chomps are a side project of
           =link_to 'Kristin Lasita.', 'http://kristinlasita.com/'
-        %p.lead
+        %p.lead.hide-for-small
           Please share your Chomps with me on
           =link_to 'Twitter!', 'https://twitter.com/kclasita'
-
 
     .row
       .large-12.columns

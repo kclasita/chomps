@@ -1,11 +1,13 @@
-//APOLOGIES FOR THE MESS //
+//I need to BEM it up here, but YOLO//
 
 %section.container--header
   .mouth--teeth-top
   .mouth
     .row
       .large-12.columns.medium-12
-        %h1.title Paper toys with a <span class="title--emphasize"> bite</span>.
+        %h1.title
+          Paper toys with a
+          %span.title--emphasize bite.
 .container--fill
   .mouth__container--teeth-bottom
     .mouth--teeth-bottom
@@ -14,26 +16,27 @@
     .row
       .large-4.columns.large-centered
         .icon--logo__container
-          .icon--logo
-            %svg{"enable-background" => "new 0 0 100 101", :version => "1.1", :viewBox => "0 0 100 101", :x => "0px", "xml:space" => "preserve", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink", :y => "0px"}
-              %g#Background
-              %g#Style_Elements
-                %circle{:cx => "50.3", :cy => "50.7", :fill => "#1563AB", :r => "48.3"}/
+          %svg{"enable-background" => "new 0 0 100 101", :version => "1.1", :viewBox => "0 0 100 101", :x => "0px", "xml:space" => "preserve", :xmlns => "http://www.w3.org/2000/svg", "xmlns:xlink" => "http://www.w3.org/1999/xlink", :y => "0px"}
+            %g#Background
+            %g#Style_Elements
+              %circle{:cx => "50.3", :cy => "50.7", :fill => "#1563AB", :r => "48.3"}/
+              %g
                 %g
-                  %g
-                    %path{:d => "M69.8,44.1c0,0-0.1,0-0.2,0.1l0.1,0.6C69.8,44.5,69.8,44.3,69.8,44.1z", :fill => "#DCDCDC"}/
-                    %path{:d => "M30.2,44.1c0,0.1,0,0.1,0,0.2L30.2,44.1C30.3,44.1,30.2,44.1,30.2,44.1z", :fill => "#DCDCDC"}/
-              %g#body
-                %polygon{:fill => "#FFFFFF", :points => "65.7,23 34.3,23 30.3,44.7 25.6,71 74.3,71 \t"}/
-              %g#smile
-                %path{:d => "M50,56.4c12.1,0,14.9-10.5,14.9-10.5s-7.5,4-14.9,4s-15-4-15-4S37.8,56.4,50,56.4z", :fill => "#1563AB"}/
-              %g#Right_Eye
-                %circle{:cx => "55", :cy => "33.7", :fill => "#1563AB", :r => "2.5"}/
-              %g#Left_Eye
-                %path{:d => "M49.4,33.7c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4\n\t\tC47.8,30.3,49.4,31.8,49.4,33.7z", :fill => "#1563AB"}/
+                  %path{:d => "M69.8,44.1c0,0-0.1,0-0.2,0.1l0.1,0.6C69.8,44.5,69.8,44.3,69.8,44.1z", :fill => "#DCDCDC"}/
+                  %path{:d => "M30.2,44.1c0,0.1,0,0.1,0,0.2L30.2,44.1C30.3,44.1,30.2,44.1,30.2,44.1z", :fill => "#DCDCDC"}/
+            %g#body
+              %polygon{:fill => "#FFFFFF", :points => "65.7,23 34.3,23 30.3,44.7 25.6,71 74.3,71 \t"}/
+            %g#smile
+              %path{:d => "M50,56.4c12.1,0,14.9-10.5,14.9-10.5s-7.5,4-14.9,4s-15-4-15-4S37.8,56.4,50,56.4z", :fill => "#1563AB"}/
+            %g#Right_Eye
+              %circle{:cx => "55", :cy => "33.7", :fill => "#1563AB", :r => "2.5"}/
+            %g#Left_Eye
+              %path{:d => "M49.4,33.7c0,1.9-1.5,3.4-3.4,3.4c-1.9,0-3.4-1.5-3.4-3.4c0-1.9,1.5-3.4,3.4-3.4\n\t\tC47.8,30.3,49.4,31.8,49.4,33.7z", :fill => "#1563AB"}/
+
     .row
       .large-8.columns.medium-8.large-centered.medium-centered
-        %p.lead Chomps are a movable toy made from folded paper and a little glue.
+        %p.lead Chomps are a desktop toy made from folded paper and a little glue.
+
     .row
       .large-4.columns.medium-5.large-centered.medium-centered
         %a.button{href: "/Chomp--Black.pdf"} Download Your Free Chomp
@@ -41,74 +44,111 @@
 
   %section.section--white.soft--ends
     .row
-      .large-4.columns.large-offset-2
-        =image_tag "supplies.gif"
-      .large-4.columns.end
-        %h2 Supplies
+      .large-5.columns.large-offset-1
+        .heading Supplies
+
         %ul
-          %li Two Pieces of Paper
-          %li Scissors or Exacto
+          %li 2 Pieces of Cardstock
+          %li Scissors or Exacto Blade
           %li Pen Cap
           %li Rubber Cement
+
         %a.button--small{href: "/Chomp--Black.pdf"} Download Chomp Pattern
 
-    %hr
+      .large-6.columns
+        =image_tag "supplies.gif", :class => "image--supplies"
+    .row
+      .large-11.columns.large-centered
+        %hr
 
     .row
-      .large-4.columns
-        %h2 Step 1
+      .large-11.large-offset-1.columns
+        .heading Step 1
     .row
-      .large-4.columns
-        %h4 Download the PDF
+      .large-5.columns.large-offset-1
+        .subheading Download the PDF
         %p This contains an overview page, the top of the Chomp, and the bottom of the Chomp. <a href="/Chomp--Black.pdf">Download it here</a>
-      .large-4.columns
-        %h4 Print out pages
+      .large-5.columns.end
+        .subheading Print out pages
         %p Print the top and bottom onto cardstock. The thicker paper helps with the durability of the toy.
 
-    %hr
+    .row
+      .large-11.columns.large-centered
+        %hr
 
     .row
-      .large-4.columns
-        %h2 Step 2
+      .large-11.large-offset-1.columns
+        .heading Step 2
+
     .row
-      .large-4.columns
-        %h4 Cut out the Chomps
-        %p Carefully cut around the outside of the Chomp pattern.
-      .large-4.columns
-        %h4 Scour all dashed lines
-        %p Gently score along the dashed lines. This helps to create crisper folds. You should now be able to fold these easily.
-    %hr
+      .large-5.columns.large-offset-1
+        .subheading Cut out the Chomps
+        %p Carefully cut around the outside of the Chomp pattern. It's easier with an Exacto, but scissors work. Be patient!
+      .large-5.columns.end
+        .subheading Scour all dashed lines
+        %p Gently score along the dashed lines with pen cap. This helps to create crisper folds. You should now be able to fold these easily.
+
     .row
-      .large-4.columns
-        %h2 Step 3
+      .large-11.columns.large-centered
+        %hr
+
     .row
-      .large-4.columns
-        %h4 Glue tabs A-F
-        %p Put glue on Tab A. Glue side A to Tab A. Hold until bond has formed. Repeat for tabs B, C, D, E, and F.
-      .large-4.columns
-        %h4 Repeat for B-F
+      .large-11.large-offset-1.columns
+        .heading Step 3
+    .row
+      .large-5.columns.large-offset-1
+        .subheading Glue tab A to side A
+        %p Put glue on Tab A. Glue side A to Tab A. Hold until bond has formed, about 30 seconds.
+      .large-5.columns.end
+        .subheading Repeat Steps for B-F
         %p Repeat glue for tabs B, C, D, E, and F. Don’t do G and H yet!
 
-    %hr
     .row
-      .large-4.columns
-        %h2 Step 4
-    .row
-      .large-4.columns
-        %h4 Assemble pieces
-        %p Take the finished head and slide it into the unglued side of the bottom. Be sure the colors of the teeth match up.
-      .large-4.columns
-        %h4 Glue tabs G and H
-        %p Repeat first steps on tabs G and H. This is the trickiest part, as there is little room between the top and the sides.
+      .large-11.columns.large-centered
+        %hr
 
-  %section.soft--ends.section--picture
+    .row
+      .large-11.large-offset-1.columns
+        .heading Step 4
+    .row
+      .large-5.columns.large-offset-1
+        .subheading Assemble pieces
+        %p Take the finished head and slide it into the unglued side of the bottom. Be sure the colors of the teeth match up.
+      .large-5.columns.end
+        .subheading Glue tabs G and H
+        %p Repeat Step 3 on tabs G and H. This is the trickiest part, as there is little room between the top and the sides.
+
+    .row
+      .large-11.columns.large-centered
+        %hr
+
+    .row
+      .large-11.large-offset-1.columns
+        .heading Step 5
+    .row
+      .large-5.columns.large-offset-1
+        .subheading Let it dry
+        %p Rubber cement is pretty hardy, but give it 5 minutes to set. Make sure the top part of the Chomp is touching the sides of the bottom.
+      .large-5.columns.end
+        .subheading Enjoy
+        %p That's it! Feel free to move you Chomp around. They are great on your desk, especially since they're the perfect size to fit a business card!
+
+  %section.section--picture
+
+  %section.about
     .row
       .large-12.columns
-        %h3.center.type--white.heading
+        .center.about-heading
           Chomps are a side project of
           =link_to 'Kristin Lasita.', 'http://kristinlasita.com/'
-        %p.lead Please share your Chomps with me!
+        %p.lead
+          Please share your Chomps with me on
+          =link_to 'Twitter!', 'https://twitter.com/kclasita'
+
 
     .row
-      .large-4.columns.large-centered
-        %p.copyright © Kristin Lasita 2015 | I do not own Best-Test Rubber Cement
+      .large-12.columns
+        %p.copyright
+          © Kristin Lasita 2015
+          %br
+          I do not own Best-Test Rubber Cement, but it's awesome.

@@ -1,1 +1,3 @@
 Hey there, this is me futzing around on an old pet project.
+
+You can check it out [here](http://chomps.herokuapp.com/)
